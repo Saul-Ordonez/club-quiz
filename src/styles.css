@@ -56,11 +56,7 @@ header {
   font-size:32px;
   color:#ffce66
 }
-.edition {
-  font-size:10px;
-  letter-spacing:2px;
-  color:#a2afc6
-}
+
 .game-heading {
   display:flex;
   justify-content:space-between;
@@ -68,13 +64,7 @@ header {
   margin:24px 0 22px;
   gap:16px
 }
-.eyebrow {
-  font-size:10px;
-  letter-spacing:2.4px;
-  color:#a9b9d6;
-  font-weight:700;
-  margin:0 0 10px
-}
+
 h1 {
   font-size:clamp(28px,3.1vw,46px);
   letter-spacing:-1.7px;
@@ -282,10 +272,7 @@ footer {
   color:#8c9db8;
   font-size:10px
 }
-footer>span:last-child {
-  letter-spacing:1.8px;
-  font-size:9px
-}
+
 .notice {
   background:#263047;
   padding:20px;
@@ -435,9 +422,7 @@ footer>span:last-child {
   .app {
     padding:20px
   }
-  .edition {
-    display:none
-  }
+
   .game-heading {
     margin:25px 0
   }
@@ -491,9 +476,7 @@ footer>span:last-child {
   footer {
     line-height:1.7
   }
-  footer>span:last-child {
-    display:none
-  }
+
   .modal-meta {
     font-size:11px
   }
@@ -520,3 +503,6 @@ footer>span:last-child {
 .team-name, .team-adjust > span { overflow-wrap: anywhere; min-width: 0; }
 .team-dot { flex-shrink: 0; }
 .score { flex-shrink: 0; }
+
+.brand { min-width: 0; line-height: 1.5; }
+.brand-icon { flex-shrink: 0; }
