@@ -45,11 +45,15 @@ At startup, add or remove teams and enter their names, then select **Start Game*
 
 Click a tile, read the clue, and select **Reveal Answer**. Use each team's plus/minus buttons to award or deduct the clue value. Buttons can be used repeatedly for host corrections. **Return to Board** marks the clue played, even without revealing its answer. Escape also returns to the board. Scores can be negative. Reset Scores only clears scores. Reset Game confirms first, clears all rounds and scores, and returns to team setup with your previous names ready to edit. When a round is complete, a status message appears.
 
-## GitHub Pages (not deployed)
+## GitHub Pages
 
-The default `base: './'` supports relative static hosting. Before deploying to `https://USERNAME.github.io/REPO/`, set `base: '/REPO/'` in `vite.config.js`. For a root user site or custom domain, use `/`. Both CSV fetches and image URLs use Vite's base, not a hardcoded root path.
+Deployment is configured in `.github/workflows/deploy.yml`. Pages uses **GitHub Actions** as its source. Pushes to `main` run tests, build the app, and deploy `dist/`. You can also run the workflow manually from the Actions tab.
 
-Build with `npm ci` and `npm run build`, then publish the contents of `dist/` through a GitHub Pages build workflow. No workflow or deployment is enabled by this project. See https://vite.dev/guide/static-deploy.html#github-pages for the official setup. After replacing CSV/images, rebuild and republish.
+The site URL is https://saul-ordonez.github.io/club-quiz/. Vite uses `/club-quiz/` as its base so CSV and image paths work there. Local development also uses http://localhost:5173/club-quiz/.
+
+The repository and deployed game are public. Deployment status and logs are available in the repository’s Actions tab.
+
+After updating CSV or images, commit and push to `main` to rebuild and republish. See https://vite.dev/guide/static-deploy.html#github-pages for Vite's deployment reference.
 
 ## Structure
 
