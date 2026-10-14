@@ -1,9 +1,9 @@
 round,category,value,question,answer,type,image
-1,Name That Nation,100,,South Korea,image,south-korea-flag.jpg
-1,Name That Nation,200,,South Africa,image,south-africa-flag.jpg
-1,Name That Nation,300,,Türkiye,image,turkiye-flag.jpg
-1,Name That Nation,400,,Ecuador,image,ecuador-flag.jpg
-1,Name That Nation,500,,Fiji,image,fiji-flag.jpg
+1,Name That Nation,100,Name the country represented by this flag.,What is South Korea?,image,south-korea-flag.jpg
+1,Name That Nation,200,Name the country represented by this flag.,What is South Africa?,image,south-africa-flag.jpg
+1,Name That Nation,300,Name the country represented by this flag.,What is Türkiye?,image,turkiye-flag.jpg
+1,Name That Nation,400,Name the country represented by this flag.,What is Ecuador?,image,ecuador-flag.jpg
+1,Name That Nation,500,Name the country represented by this flag.,What is Fiji?,image,fiji-flag.jpg
 1,"Slang, Through The Ages",100,"[~2020s]
 Attractiveness, skill in conversation.
 ",What is 'rizz'?,text,
@@ -31,8 +31,8 @@ Determination, drive, motivation, energy.",What is 'moxie'?,text,
 1,Fright Answers Only,300,"In Irish folklore, this spirit’s mournful wail is said to foretell a death in the family.",What is a banshee?,text,
 1,Fright Answers Only,400,This author brought Frankenstein’s creature to life in an 1818 novel.,Who is Mary Shelley?,text,
 1,Fright Answers Only,500,"From German words meaning “noisy spirit,” this type of ghost is said to move objects and make unexplained sounds.",What is a poltergeist?,text,
-1,Picture That Record,100,,What is Nirvana?,image,nirvana-album.jpg
-1,Picture That Record,200,,What MGMT?,image,mgmt-album.jpg
-1,Picture That Record,300,,What is Garbage?,image,garbage-album.jpg
-1,Picture That Record,400,,What is Joy Division?,image,joy-division-album.jpg
-1,Picture That Record,500,,Who is King Geedorah/MF Doom?,image,king-geedorah-album.jpg
+1,Picture That Record,100,Name the artist or band behind this album.,Who are Nirvana?,image,nirvana-album.jpg
+1,Picture That Record,200,Name the artist or band behind this album.,Who are MGMT?,image,mgmt-album.jpg
+1,Picture That Record,300,Name the artist or band behind this album.,Who are Garbage?,image,garbage-album.jpg
+1,Picture That Record,400,Name the artist or band behind this album.,Who are Joy Division?,image,joy-division-album.jpg
+1,Picture That Record,500,Name the artist or band behind this album.,Who is King Geedorah (MF Doom)?,image,king-geedorah-album.jpg

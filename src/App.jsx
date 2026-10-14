@@ -4,6 +4,7 @@ import GameBoard from './components/GameBoard.jsx';
 import ScoreBoard from './components/ScoreBoard.jsx';
 import ClueModal from './components/ClueModal.jsx';
 import TeamSetup from './components/TeamSetup.jsx';
+import ResultsModal from './components/ResultsModal.jsx';
 
 export default function App() {
   const [data, setData] = useState(null);
@@ -14,6 +15,7 @@ export default function App() {
   const [teamNames, setTeamNames] = useState(['', '', '']);
   const [started, setStarted] = useState(false);
   const [active, setActive] = useState(null);
+  const [showResults, setShowResults] = useState(false);
   useEffect(() => {
     const controller = new AbortController();
     loadQuestions(import.meta.env.BASE_URL, controller.signal).then(result => { setData(result); setRound(result.questions[0].round); }).catch(error => { if (error.name !== 'AbortError') setError(error.message); });
@@ -25,9 +27,16 @@ export default function App() {
       setTeams(previous => previous.map(team => ({ ...team, score: 0 })));
       setRound(data.questions[0].round);
       setStarted(false);
+      setShowResults(false);
     }
   };
-  const closeClue = () => { setUsed(previous => new Set([...previous, active.id])); setActive(null); };
+  const closeClue = () => {
+    const nextUsed = new Set([...used, active.id]);
+    setUsed(nextUsed);
+    setActive(null);
+    // Wait until the host finishes scoring the last clue, across all rounds.
+    if (nextUsed.size === data.questions.length) setShowResults(true);
+  };
   const clues = data?.questions.filter(clue => clue.round === round) || [];
   const played = clues.filter(clue => used.has(clue.id)).length;
   const rounds = [...new Set(data?.questions.map(clue => clue.round) || [])];
@@ -45,10 +54,12 @@ export default function App() {
       <div className="board-toolbar"><div className="round-label"><span className="live-dot" />{rounds.length > 1 ? <label>Round <select value={round} onChange={event => setRound(event.target.value)}>{rounds.map(item => <option key={item}>{item}</option>)}</select></label> : `ROUND ${round}`}</div><span>{played} / {clues.length} CLUES PLAYED</span></div>
       <GameBoard clues={clues} used={used} onSelect={setActive} />
       {played === clues.length && <p className="completion" role="status">{used.size === data.questions.length ? 'Game complete! Final scores are below.' : 'Round complete! Select another round to keep playing.'}</p>}
+      {used.size === data.questions.length && <div className="results-reopen"><button className="primary" onClick={() => setShowResults(true)}>View Results</button></div>}
       <ScoreBoard teams={teams} onReset={() => setTeams(previous => previous.map(team => ({ ...team, score: 0 })))} />
       <footer><span>Host controls: reveal each answer, then award or deduct points.</span></footer>
       </>}
     </>}
     {active && <ClueModal key={active.id} clue={active} teams={teams} onClose={closeClue} onScore={(teamIndex, amount) => setTeams(previous => previous.map((team, index) => index === teamIndex ? { ...team, score: team.score + amount } : team))} />}
+    {showResults && <ResultsModal teams={teams} onClose={() => setShowResults(false)} onReset={resetGame} />}
   </main>;
 }

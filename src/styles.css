@@ -137,7 +137,8 @@ select {
   min-width:0
 }
 .category h2 {
-  height:64px;
+  height:112px;
+  flex-shrink:0;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -147,9 +148,10 @@ select {
   border:1px solid #2e4470;
   border-radius:9px;
   margin:0 0 3px;
-  padding:8px;
+  padding:12px;
   text-align:center;
   font-size:clamp(15px,1.6vw,22px);
+  line-height:1.2;
   overflow-wrap:anywhere
 }
 .category-number {
@@ -298,6 +300,11 @@ footer {
   overflow:auto;
   box-shadow:0 30px 120px #0009
 }
+
+.clue-modal h2 {
+  white-space: pre-line;
+}
+
 .clue-modal::backdrop {
   background:#030918dc;
   backdrop-filter:blur(7px)
@@ -506,3 +513,21 @@ footer {
 
 .brand { min-width: 0; line-height: 1.5; }
 .brand-icon { flex-shrink: 0; }
+
+/* End-of-game standings. */
+.results-modal { max-width: 800px; }
+.results-label { color: #ffce66; text-align: center; letter-spacing: 2px; font-size: 12px; }
+.results-modal h2 { margin-bottom: 12px; overflow-wrap: anywhere; }
+.results-summary { text-align: center; color: #c8d6ed; font-size: 20px; overflow-wrap: anywhere; }
+.results-list { list-style: none; padding: 0; margin: 28px 0; display: grid; gap: 10px; }
+.results-list li { display: grid; grid-template-columns: 32px minmax(0,1fr) auto; gap: 14px; align-items: center; padding: 18px; background: #172d50; border: 1px solid #334766; border-radius: 8px; }
+.results-list .result-winner { border-color: #ffce66; background: #343647; }
+.result-rank { color: #ffce66; font-size: 24px; font-weight: 700; }
+.result-name { overflow-wrap: anywhere; font-size: 20px; }
+.results-list strong { font-size: 24px; font-variant-numeric: tabular-nums; }
+.results-list small { font-size: 10px; color: #b4c3da; }
+.results-reopen { text-align: center; margin: 16px 0; }
+@media (max-width: 480px) {
+  .results-list li { padding: 12px; gap: 8px; grid-template-columns: 24px minmax(0,1fr); }
+  .results-list strong { grid-column: 2; }
+}
