@@ -1,38 +1,31 @@
 round,category,value,question,answer,type,image
-1,Name That Nation,100,Name the country represented by this flag.,What is South Korea?,image,south-korea-flag.jpg
-1,Name That Nation,200,Name the country represented by this flag.,What is South Africa?,image,south-africa-flag.jpg
-1,Name That Nation,300,Name the country represented by this flag.,What is Türkiye?,image,turkiye-flag.jpg
-1,Name That Nation,400,Name the country represented by this flag.,What is Ecuador?,image,ecuador-flag.jpg
-1,Name That Nation,500,Name the country represented by this flag.,What is Fiji?,image,fiji-flag.jpg
-1,"Slang, Through The Ages",100,"[~2020s]
-Attractiveness, skill in conversation.
-",What is 'rizz'?,text,
-1,"Slang, Through The Ages",200,"[~18th Century]
-A song sung by sailors.",What is a 'shanty'?,text,
-1,"Slang, Through The Ages",300,"[~1960s]
-Disgusting, revolting.",What is 'grody'?,text,
-1,"Slang, Through The Ages",400,"[~20th Century]
-An unsophisticated or naive person. A mark.
-",What is a 'rube'?,text,
-1,"Slang, Through The Ages",500,"[~1930s]
-Determination, drive, motivation, energy.",What is 'moxie'?,text,
-1,Big Fun Facts!,100,The mountain with the tallest peak on Earth.,What is Mount Everest?,text,
-1,Big Fun Facts!,200,"At almost 3 feet a day, the fastest-growing organism.",What is Bamboo?,text,
-1,Big Fun Facts!,300,"From base to peak, the tallest mountain on Earth.",What is Mauna Kea?,text,
-1,Big Fun Facts!,400,This single country has the largest coastline in the world.,What is Canada?,text,
-1,Big Fun Facts!,500,The largest living single organism in the world. ,"What is Pando? (an ancient clonal colony of ~47,000 quaking aspen trees)",text,
-1,A Little Screen Time,100,"2001: A Space Odyssey, The Terminator, and The Matrix all share a common threat.",What is AI?,text,
-1,A Little Screen Time,200,"In Malcolm in the Middle, the oldest brother Francis exchanges his American dollars for ""Alaskan dollars"" in this city.",What is Bellingham?,text,
-1,A Little Screen Time,300,This actor/comedian dropped out of an Electrical Engineering PhD program to pursue acting.,Who is Rowan Atkinson (Mr. Bean)?,text,
-1,A Little Screen Time,400,"This TV Personality earned a B.S. in Mechanical Engineering, and proceeded to work at Boeing.  After winning a Steve Martin lookalike contest he transitioned into a career in TV. ",Who is Bill Nye the Science Guy?,text,
-1,A Little Screen Time,500,This space movie was actually partially filmed in simulated zero-gravity aboard a KC-135 aircraft with a parabolic flight path.,What is Apollo 13?,text,
-1,Fright Answers Only,100,"According to vampire folklore, this pungent kitchen ingredient can keep bloodsuckers away.",What is garlic?,text,
-1,Fright Answers Only,200,"Before pumpkins became the Halloween carving favorite in America, people in Ireland commonly carved these root vegetables into lanterns.",What are turnips?,text,
-1,Fright Answers Only,300,"In Irish folklore, this spirit’s mournful wail is said to foretell a death in the family.",What is a banshee?,text,
-1,Fright Answers Only,400,This author brought Frankenstein’s creature to life in an 1818 novel.,Who is Mary Shelley?,text,
-1,Fright Answers Only,500,"From German words meaning “noisy spirit,” this type of ghost is said to move objects and make unexplained sounds.",What is a poltergeist?,text,
-1,Picture That Record,100,Name the artist or band behind this album.,Who are Nirvana?,image,nirvana-album.jpg
-1,Picture That Record,200,Name the artist or band behind this album.,Who are MGMT?,image,mgmt-album.jpg
-1,Picture That Record,300,Name the artist or band behind this album.,Who are Garbage?,image,garbage-album.jpg
-1,Picture That Record,400,Name the artist or band behind this album.,Who are Joy Division?,image,joy-division-album.jpg
-1,Picture That Record,500,Name the artist or band behind this album.,Who is King Geedorah (MF Doom)?,image,king-geedorah-album.jpg
+1,Snack Attack,100,This green fruit is the main ingredient in guacamole.,What is an avocado?,text,
+1,Snack Attack,200,"Hummus gets its body from these legumes, also called garbanzo beans.",What are chickpeas?,text,
+1,Snack Attack,300,This crumbly white cheese is a staple of Greek salad.,What is feta?,text,
+1,Snack Attack,400,This Italian dessert layers coffee-soaked ladyfingers with mascarpone cream.,What is tiramisu?,text,
+1,Snack Attack,500,This spice comes from the dried stigmas of a crocus flower.,What is saffron?,text,
+1,Bad Movie Summaries,100,An ogre goes on a road trip with a talking donkey to get strangers out of his swamp.,What is Shrek?,text,
+1,Bad Movie Summaries,200,A teenager borrows a DeLorean and accidentally interferes with his parents getting together.,What is Back to the Future?,text,
+1,Bad Movie Summaries,300,A theme park discovers that bringing back dinosaurs creates a customer-safety problem.,What is Jurassic Park?,text,
+1,Bad Movie Summaries,400,An astronaut becomes a potato farmer because his coworkers accidentally leave him on Mars.,What is The Martian?,text,
+1,Bad Movie Summaries,500,A rat secretly operates a French chef by pulling his hair.,What is Ratatouille?,text,
+1,Out of Office,100,The Colosseum and the city of Venice are both in this country.,What is Italy?,text,
+1,Out of Office,200,This ocean lies between the Americas and Europe.,What is the Atlantic Ocean?,text,
+1,Out of Office,300,The ancient Inca site Machu Picchu is in this South American country.,What is Peru?,text,
+1,Out of Office,400,"This imaginary line at zero degrees longitude passes through Greenwich, London.",What is the prime meridian?,text,
+1,Out of Office,500,This narrow strait separates Spain from Morocco and connects the Atlantic to the Mediterranean.,What is the Strait of Gibraltar?,text,
+1,Aux Cord Privileges,100,"Freddie Mercury fronted this band, known for Bohemian Rhapsody and We Will Rock You.",Who are Queen?,text,
+1,Aux Cord Privileges,200,"This singer released the albums 1989, Reputation, and Folklore.",Who is Taylor Swift?,text,
+1,Aux Cord Privileges,300,This duo wore robot helmets and released Get Lucky with Pharrell Williams.,Who are Daft Punk?,text,
+1,Aux Cord Privileges,400,This musical term means to gradually get louder.,What is a crescendo?,text,
+1,Aux Cord Privileges,500,This British band released the albums OK Computer and In Rainbows.,Who are Radiohead?,text,
+1,Word Nerds,100,Racecar and kayak are examples of this kind of word that reads the same forward and backward.,What is a palindrome?,text,
+1,Word Nerds,200,Rearrange the letters in LISTEN to make a word meaning quiet.,What is SILENT?,text,
+1,Word Nerds,300,"Buzz, hiss, and clang are examples of this term for words that imitate sounds.",What is onomatopoeia?,text,
+1,Word Nerds,400,The phrases deafening silence and jumbo shrimp are examples of this pairing of contradictory terms.,What is an oxymoron?,text,
+1,Word Nerds,500,"A sentence using every letter of the alphabet, such as The quick brown fox jumps over the lazy dog, is called this.",What is a pangram?,text,
+1,Science After Hours,100,This force is why your dropped phone heads toward the floor instead of the ceiling.,What is gravity?,text,
+1,Science After Hours,200,"On the periodic table, Fe is the symbol for this metal.",What is iron?,text,
+1,Science After Hours,300,This gas makes up about 78 percent of Earth's atmosphere.,What is nitrogen?,text,
+1,Science After Hours,400,A passing siren seems to change pitch because of this effect.,What is the Doppler effect?,text,
+1,Science After Hours,500,A changing magnetic field can induce a voltage. This phenomenon is how many generators produce electricity.,What is electromagnetic induction?,text,
